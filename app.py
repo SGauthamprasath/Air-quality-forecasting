@@ -8,7 +8,7 @@ model = joblib.load('xgboost_model.pkl')
 scaler = joblib.load('scaler.pkl')
 
 # Define feature names
-feature_names = ['PM2.5', 'PM10', 'NO', 'NO2', 'NOx', 'NH3', 'SO2', 'CO', 'Ozone', 'RH', 'WS', 'WD', 'AT']
+feature_names = ['PM2.5','NO','NO2','NOx','NH3','SO2','CO','Ozone','RH','WS','WD','BP','AT']
 
 # Streamlit app title
 st.title("PM2.5 Prediction with XGBoost")
