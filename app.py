@@ -70,6 +70,7 @@ if st.button("Predict PM2.5"):
             # Make prediction
             with torch.no_grad():
                 prediction = model(input_tensor).item()
+                prediction*=100
 
             st.success(f"Predicted PM2.5: {prediction:.4f} µg/m³")
     except Exception as e:
